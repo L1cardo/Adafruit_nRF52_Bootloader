@@ -1,6 +1,7 @@
 name: Build
 
 on:
+  workflow_dispatch:
   pull_request:
   push:
   repository_dispatch:
@@ -66,3 +67,4 @@ jobs:
           _bin/${{ matrix.board }}/${{ matrix.board }}_bootloader-*.zip
           _bin/${{ matrix.board }}/${{ matrix.board }}_bootloader-*.hex
           _bin/${{ matrix.board }}/update-${{ matrix.board }}_bootloader-*.uf2
+

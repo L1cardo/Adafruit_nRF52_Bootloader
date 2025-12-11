@@ -32,37 +32,27 @@
  *------------------------------------------------------------------*/
 // The board has 3 leds, but changing the number here causes OTA issues.
 #define LEDS_NUMBER           1
-#define LED_PRIMARY_PIN       _PINNUM(0, 26)
+#define LED_PRIMARY_PIN       _PINNUM(0, 13)
 #define LED_STATE_ON          0
-
-#define NEOPIXELS_NUMBER      0
-
-/*------------------------------------------------------------------*/
-/* BUTTON
- *------------------------------------------------------------------*/
-#define BUTTONS_NUMBER        2
-#define BUTTON_1              _PINNUM(0, 18)
-// Button 2 is defined as D1 from expansion board.
-#define BUTTON_2              _PINNUM(0, 3)
-#define BUTTON_PULL           NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
 // BLE OTA
 //--------------------------------------------------------------------+
-#define BLEDIS_MANUFACTURER   "Seeed"
-#define BLEDIS_MODEL          "XIAO nRF52840"
+#define BLEDIS_MANUFACTURER   "Flow"
+#define BLEDIS_MODEL          "Flow Keyboard"
 
 //--------------------------------------------------------------------+
 // USB
 //--------------------------------------------------------------------+
-#define USB_DESC_VID           0x2886
-#define USB_DESC_UF2_PID       0x0044
-#define USB_DESC_CDC_ONLY_PID  0x0044
+#define USB_DESC_VID           0x0408
+#define USB_DESC_UF2_PID       0x0001
+#define USB_DESC_CDC_ONLY_PID  0x0001
 
 //------------- UF2 -------------//
-#define UF2_PRODUCT_NAME   "Seeed XIAO nRF52840"
-#define UF2_VOLUME_LABEL   "XIAO-BOOT"
-#define UF2_BOARD_ID       "nRF52840-SeeedXiao-v1"
-#define UF2_INDEX_URL      "https://www.seeedstudio.com/"
+#define UF2_PRODUCT_NAME   "Flow Keyboard Bootloader"
+#define UF2_VOLUME_LABEL   "FLOW-BOOT"
+#define UF2_BOARD_ID       "Flow-Keyboard"
+#define UF2_INDEX_URL      "https://apps.apple.com/app/id6755629021"
 
 #endif // _XIAO_BLE
+

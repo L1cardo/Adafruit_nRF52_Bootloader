@@ -47,7 +47,7 @@
 // BLE OTA
 //--------------------------------------------------------------------+
 #define BLEDIS_MANUFACTURER   "Flow"
-#define BLEDIS_MODEL          "Flow Keyboard"
+#define BLEDIS_MODEL          "Flow Keyboard Bootloader"
 
 //--------------------------------------------------------------------+
 // USB
@@ -63,6 +63,7 @@
 #define UF2_INDEX_URL      "https://apps.apple.com/app/id6755629021"
 
 #endif // _XIAO_BLE
+
 
 
 

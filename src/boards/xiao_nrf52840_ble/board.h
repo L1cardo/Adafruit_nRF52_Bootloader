@@ -38,7 +38,9 @@
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
-#define BUTTONS_NUMBER        0
+#define BUTTONS_NUMBER        1
+#define BUTTON_1              _PINNUM(0, 18)
+#define BUTTON_PULL           NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
 // BLE OTA
@@ -60,5 +62,6 @@
 #define UF2_INDEX_URL      "https://apps.apple.com/app/id6755629021"
 
 #endif // _XIAO_BLE
+
 
 
